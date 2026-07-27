@@ -1,0 +1,35 @@
+name: Job Watcher Maintenance
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prune-stale:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Prune stale companies
+        run: python remove_stale.py
+
+      - name: Commit pruned config
+        run: |
+          git config user.name "job-watcher-bot"
+          git config user.email "actions@github.com"
+          git add companies.json
+          git diff --quiet --cached || git commit -m "Auto-prune stale companies"
+          git push
