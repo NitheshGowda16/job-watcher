@@ -1,0 +1,10 @@
+{
+  "keywords_include": ["software engineer", "sde", "full stack", "fullstack", "backend engineer", "platform engineer"],
+  "keywords_exclude": ["staff", "principal", "senior manager", "director", "intern", "internship"],
+  "locations_include": ["remote", "texas", "austin", "dallas", "california", "washington", "new york", "seattle", "san francisco", "irving"],
+  "companies": [
+    {"name": "Stripe", "ats": "greenhouse", "slug": "stripe"},
+    {"name": "Netflix", "ats": "lever", "slug": "netflix"},
+    {"name": "Ramp", "ats": "ashby", "slug": "ramp"}
+  ]
+}
