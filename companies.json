@@ -1,10 +1,193 @@
 {
-  "keywords_include": ["software engineer", "sde", "full stack", "fullstack", "backend engineer", "platform engineer"],
-  "keywords_exclude": ["staff", "principal", "senior manager", "director", "intern", "internship"],
-  "locations_include": ["remote", "texas", "austin", "dallas", "california", "washington", "new york", "seattle", "san francisco", "irving"],
+  "max_age_hours": 48,
+  "keywords_include": [
+    "software engineer",
+    "sde",
+    "full stack",
+    "fullstack",
+    "backend engineer",
+    "platform engineer"
+  ],
+  "keywords_exclude": [
+    "staff",
+    "principal",
+    "senior manager",
+    "director",
+    "intern",
+    "internship"
+  ],
+  "locations_include": [
+    "remote",
+    "texas",
+    "austin",
+    "dallas",
+    "california",
+    "washington",
+    "new york",
+    "seattle",
+    "san francisco",
+    "irving"
+  ],
   "companies": [
-    {"name": "Stripe", "ats": "greenhouse", "slug": "stripe"},
-    {"name": "Netflix", "ats": "lever", "slug": "netflix"},
-    {"name": "Ramp", "ats": "ashby", "slug": "ramp"}
+    {
+      "name": "Anthropic",
+      "ats": "greenhouse",
+      "slug": "anthropic"
+    },
+    {
+      "name": "Stripe",
+      "ats": "greenhouse",
+      "slug": "stripe"
+    },
+    {
+      "name": "Vercel",
+      "ats": "greenhouse",
+      "slug": "vercel"
+    },
+    {
+      "name": "Airtable",
+      "ats": "greenhouse",
+      "slug": "airtable"
+    },
+    {
+      "name": "Gusto",
+      "ats": "greenhouse",
+      "slug": "gusto"
+    },
+    {
+      "name": "Figma",
+      "ats": "greenhouse",
+      "slug": "figma"
+    },
+    {
+      "name": "Mercury",
+      "ats": "greenhouse",
+      "slug": "mercury"
+    },
+    {
+      "name": "Databricks",
+      "ats": "greenhouse",
+      "slug": "databricks"
+    },
+    {
+      "name": "Coinbase",
+      "ats": "greenhouse",
+      "slug": "coinbase"
+    },
+    {
+      "name": "Airbnb",
+      "ats": "greenhouse",
+      "slug": "airbnb"
+    },
+    {
+      "name": "Robinhood",
+      "ats": "greenhouse",
+      "slug": "robinhood"
+    },
+    {
+      "name": "Brex",
+      "ats": "greenhouse",
+      "slug": "brex"
+    },
+    {
+      "name": "Asana",
+      "ats": "greenhouse",
+      "slug": "asana"
+    },
+    {
+      "name": "Dropbox",
+      "ats": "greenhouse",
+      "slug": "dropbox"
+    },
+    {
+      "name": "Pinterest",
+      "ats": "greenhouse",
+      "slug": "pinterest"
+    },
+    {
+      "name": "Affirm",
+      "ats": "greenhouse",
+      "slug": "affirm"
+    },
+    {
+      "name": "Instacart",
+      "ats": "greenhouse",
+      "slug": "instacart"
+    },
+    {
+      "name": "Discord",
+      "ats": "greenhouse",
+      "slug": "discord"
+    },
+    {
+      "name": "Reddit",
+      "ats": "greenhouse",
+      "slug": "reddit"
+    },
+    {
+      "name": "GitLab",
+      "ats": "greenhouse",
+      "slug": "gitlab"
+    },
+    {
+      "name": "Datadog",
+      "ats": "greenhouse",
+      "slug": "datadog"
+    },
+    {
+      "name": "Netflix",
+      "ats": "lever",
+      "slug": "netflix"
+    },
+    {
+      "name": "Vanta",
+      "ats": "ashby",
+      "slug": "vanta"
+    },
+    {
+      "name": "Supabase",
+      "ats": "ashby",
+      "slug": "supabase"
+    },
+    {
+      "name": "Ramp",
+      "ats": "ashby",
+      "slug": "ramp"
+    },
+    {
+      "name": "Linear",
+      "ats": "ashby",
+      "slug": "linear"
+    },
+    {
+      "name": "Notion",
+      "ats": "ashby",
+      "slug": "notion"
+    },
+    {
+      "name": "Plaid",
+      "ats": "lever",
+      "slug": "plaid"
+    },
+    {
+      "name": "Snowflake",
+      "ats": "ashby",
+      "slug": "snowflake"
+    },
+    {
+      "name": "Confluent",
+      "ats": "ashby",
+      "slug": "confluent"
+    },
+    {
+      "name": "Box",
+      "ats": "greenhouse",
+      "slug": "boxinc"
+    },
+    {
+      "name": "Eventbrite",
+      "ats": "greenhouse",
+      "slug": "eventbriteinc"
+    }
   ]
 }

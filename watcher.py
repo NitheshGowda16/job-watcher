@@ -2,8 +2,8 @@ import json
 import os
 import sys
 import time
-import requests
 from datetime import datetime, timezone
+import requests
 
 CONFIG_PATH = "companies.json"
 STATE_PATH = "seen_jobs.json"
@@ -26,6 +26,16 @@ def save_json(path, data):
         json.dump(data, f, indent=2)
 
 
+def parse_iso(ts):
+    if not ts:
+        return None
+    try:
+        ts = ts.replace("Z", "+00:00")
+        return datetime.fromisoformat(ts)
+    except Exception:
+        return None
+
+
 def fetch_greenhouse(slug):
     url = f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true"
     resp = requests.get(url, headers=HEADERS, timeout=20)
@@ -38,6 +48,7 @@ def fetch_greenhouse(slug):
             "title": j.get("title", ""),
             "location": (j.get("location") or {}).get("name", ""),
             "url": j.get("absolute_url", ""),
+            "posted_at": parse_iso(j.get("updated_at")),
         })
     return results
 
@@ -49,11 +60,19 @@ def fetch_lever(slug):
     jobs = resp.json()
     results = []
     for j in jobs:
+        created_ms = j.get("createdAt")
+        posted_at = None
+        if created_ms:
+            try:
+                posted_at = datetime.fromtimestamp(created_ms / 1000, tz=timezone.utc)
+            except Exception:
+                posted_at = None
         results.append({
             "id": str(j.get("id")),
             "title": j.get("text", ""),
             "location": (j.get("categories") or {}).get("location", ""),
             "url": j.get("hostedUrl", ""),
+            "posted_at": posted_at,
         })
     return results
 
@@ -70,6 +89,7 @@ def fetch_ashby(slug):
             "title": j.get("title", ""),
             "location": j.get("location", ""),
             "url": j.get("jobUrl", ""),
+            "posted_at": parse_iso(j.get("publishedAt")),
         })
     return results
 
@@ -98,6 +118,18 @@ def matches_filters(job, keywords_include, keywords_exclude, locations_include):
     return True
 
 
+def is_within_age_limit(job, max_age_hours):
+    if not max_age_hours:
+        return True
+    posted_at = job.get("posted_at")
+    if posted_at is None:
+        # Can't determine age (missing/unparseable timestamp) — include rather than silently drop.
+        return True
+    now = datetime.now(timezone.utc)
+    age_hours = (now - posted_at).total_seconds() / 3600
+    return age_hours <= max_age_hours
+
+
 def send_telegram(message):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("Telegram credentials missing, skipping notification.")
@@ -124,6 +156,7 @@ def main():
     keywords_include = config.get("keywords_include", [])
     keywords_exclude = config.get("keywords_exclude", [])
     locations_include = config.get("locations_include", [])
+    max_age_hours = config.get("max_age_hours")
 
     new_count = 0
 
@@ -151,6 +184,8 @@ def main():
             if job["id"] in seen_ids:
                 continue
             if not matches_filters(job, keywords_include, keywords_exclude, locations_include):
+                continue
+            if not is_within_age_limit(job, max_age_hours):
                 continue
 
             message = (

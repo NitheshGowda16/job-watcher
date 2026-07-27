@@ -1,0 +1,13 @@
+Supabase
+Ramp
+Linear
+Replicate
+Notion
+DoorDash
+Plaid
+Snowflake
+Confluent
+HashiCorp
+Box
+Eventbrite
+Retool
