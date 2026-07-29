@@ -28,6 +28,45 @@
     "san francisco",
     "irving"
   ],
+  "locations_exclude": [
+    "canada",
+    "toronto",
+    "vancouver",
+    "montreal",
+    "uk",
+    "united kingdom",
+    "london",
+    "dublin",
+    "ireland",
+    "germany",
+    "berlin",
+    "munich",
+    "france",
+    "paris",
+    "india",
+    "bangalore",
+    "hyderabad",
+    "pune",
+    "singapore",
+    "australia",
+    "sydney",
+    "melbourne",
+    "poland",
+    "portugal",
+    "spain",
+    "netherlands",
+    "amsterdam",
+    "brazil",
+    "mexico",
+    "philippines",
+    "japan",
+    "tokyo",
+    "emea",
+    "apac",
+    "latam",
+    "worldwide",
+    "anywhere"
+  ],
   "companies": [
     {
       "name": "Anthropic",
@@ -188,6 +227,611 @@
       "name": "Eventbrite",
       "ats": "greenhouse",
       "slug": "eventbriteinc"
+    },
+    {
+      "name": "OpenAI",
+      "ats": "ashby",
+      "slug": "openai"
+    },
+    {
+      "name": "MongoDB",
+      "ats": "greenhouse",
+      "slug": "mongodb"
+    },
+    {
+      "name": "Elastic",
+      "ats": "greenhouse",
+      "slug": "elastic"
+    },
+    {
+      "name": "Twilio",
+      "ats": "greenhouse",
+      "slug": "twilio"
+    },
+    {
+      "name": "Amplitude",
+      "ats": "greenhouse",
+      "slug": "amplitude"
+    },
+    {
+      "name": "Braze",
+      "ats": "greenhouse",
+      "slug": "braze"
+    },
+    {
+      "name": "Intercom",
+      "ats": "greenhouse",
+      "slug": "intercom"
+    },
+    {
+      "name": "Deel",
+      "ats": "ashby",
+      "slug": "deel"
+    },
+    {
+      "name": "Carta",
+      "ats": "greenhouse",
+      "slug": "carta"
+    },
+    {
+      "name": "Squarespace",
+      "ats": "greenhouse",
+      "slug": "squarespace"
+    },
+    {
+      "name": "Twitch",
+      "ats": "greenhouse",
+      "slug": "twitch"
+    },
+    {
+      "name": "Spotify",
+      "ats": "lever",
+      "slug": "spotify"
+    },
+    {
+      "name": "Duolingo",
+      "ats": "greenhouse",
+      "slug": "duolingo"
+    },
+    {
+      "name": "Roblox",
+      "ats": "greenhouse",
+      "slug": "roblox"
+    },
+    {
+      "name": "Chime",
+      "ats": "greenhouse",
+      "slug": "chime"
+    },
+    {
+      "name": "SoFi",
+      "ats": "greenhouse",
+      "slug": "sofi"
+    },
+    {
+      "name": "Marqeta",
+      "ats": "greenhouse",
+      "slug": "marqeta"
+    },
+    {
+      "name": "Toast",
+      "ats": "greenhouse",
+      "slug": "toast"
+    },
+    {
+      "name": "Lyft",
+      "ats": "greenhouse",
+      "slug": "lyft"
+    },
+    {
+      "name": "Nuro",
+      "ats": "greenhouse",
+      "slug": "nuro"
+    },
+    {
+      "name": "Waymo",
+      "ats": "greenhouse",
+      "slug": "waymo"
+    },
+    {
+      "name": "Zoox",
+      "ats": "lever",
+      "slug": "zoox"
+    },
+    {
+      "name": "Palantir",
+      "ats": "lever",
+      "slug": "palantir"
+    },
+    {
+      "name": "New Relic",
+      "ats": "greenhouse",
+      "slug": "new"
+    },
+    {
+      "name": "PagerDuty",
+      "ats": "greenhouse",
+      "slug": "pagerduty"
+    },
+    {
+      "name": "Sentry",
+      "ats": "ashby",
+      "slug": "sentry"
+    },
+    {
+      "name": "LaunchDarkly",
+      "ats": "greenhouse",
+      "slug": "launchdarkly"
+    },
+    {
+      "name": "CircleCI",
+      "ats": "greenhouse",
+      "slug": "circleci"
+    },
+    {
+      "name": "ClickUp",
+      "ats": "ashby",
+      "slug": "clickup"
+    },
+    {
+      "name": "Smartsheet",
+      "ats": "greenhouse",
+      "slug": "smartsheet"
+    },
+    {
+      "name": "Miro",
+      "ats": "ashby",
+      "slug": "miro"
+    },
+    {
+      "name": "Webflow",
+      "ats": "greenhouse",
+      "slug": "webflow"
+    },
+    {
+      "name": "HubSpot",
+      "ats": "greenhouse",
+      "slug": "hubspot"
+    },
+    {
+      "name": "Freshworks",
+      "ats": "lever",
+      "slug": "freshworks"
+    },
+    {
+      "name": "Help Scout",
+      "ats": "ashby",
+      "slug": "helpscout"
+    },
+    {
+      "name": "Gorgias",
+      "ats": "ashby",
+      "slug": "gorgias"
+    },
+    {
+      "name": "Klaviyo",
+      "ats": "greenhouse",
+      "slug": "klaviyo"
+    },
+    {
+      "name": "Vonage",
+      "ats": "greenhouse",
+      "slug": "vonage"
+    },
+    {
+      "name": "Backblaze",
+      "ats": "greenhouse",
+      "slug": "backblaze"
+    },
+    {
+      "name": "Wasabi",
+      "ats": "greenhouse",
+      "slug": "wasabi"
+    },
+    {
+      "name": "Vultr",
+      "ats": "ashby",
+      "slug": "vultr"
+    },
+    {
+      "name": "Fastly",
+      "ats": "greenhouse",
+      "slug": "fastly"
+    },
+    {
+      "name": "Cloudflare",
+      "ats": "greenhouse",
+      "slug": "cloudflare"
+    },
+    {
+      "name": "Render",
+      "ats": "ashby",
+      "slug": "render"
+    },
+    {
+      "name": "Railway",
+      "ats": "ashby",
+      "slug": "railway"
+    },
+    {
+      "name": "Netlify",
+      "ats": "greenhouse",
+      "slug": "netlify"
+    },
+    {
+      "name": "PlanetScale",
+      "ats": "greenhouse",
+      "slug": "planetscale"
+    },
+    {
+      "name": "Neon",
+      "ats": "lever",
+      "slug": "neon"
+    },
+    {
+      "name": "CockroachLabs",
+      "ats": "greenhouse",
+      "slug": "cockroachlabs"
+    },
+    {
+      "name": "Redis",
+      "ats": "ashby",
+      "slug": "redis"
+    },
+    {
+      "name": "Algolia",
+      "ats": "greenhouse",
+      "slug": "algolia"
+    },
+    {
+      "name": "Pinecone",
+      "ats": "ashby",
+      "slug": "pinecone"
+    },
+    {
+      "name": "Weaviate",
+      "ats": "ashby",
+      "slug": "weaviate"
+    },
+    {
+      "name": "Scale AI",
+      "ats": "greenhouse",
+      "slug": "scaleai"
+    },
+    {
+      "name": "Labelbox",
+      "ats": "greenhouse",
+      "slug": "labelbox"
+    },
+    {
+      "name": "Cohere",
+      "ats": "ashby",
+      "slug": "cohere"
+    },
+    {
+      "name": "Mistral",
+      "ats": "lever",
+      "slug": "mistral"
+    },
+    {
+      "name": "Stability AI",
+      "ats": "greenhouse",
+      "slug": "stabilityai"
+    },
+    {
+      "name": "Runway",
+      "ats": "ashby",
+      "slug": "runway"
+    },
+    {
+      "name": "Perplexity",
+      "ats": "ashby",
+      "slug": "perplexity"
+    },
+    {
+      "name": "Character AI",
+      "ats": "ashby",
+      "slug": "character"
+    },
+    {
+      "name": "Writer",
+      "ats": "ashby",
+      "slug": "writer"
+    },
+    {
+      "name": "Bubble",
+      "ats": "ashby",
+      "slug": "bubble"
+    },
+    {
+      "name": "Zapier",
+      "ats": "ashby",
+      "slug": "zapier"
+    },
+    {
+      "name": "Make",
+      "ats": "greenhouse",
+      "slug": "make"
+    },
+    {
+      "name": "n8n",
+      "ats": "ashby",
+      "slug": "n8n"
+    },
+    {
+      "name": "Workato",
+      "ats": "greenhouse",
+      "slug": "workato"
+    },
+    {
+      "name": "Boomi",
+      "ats": "ashby",
+      "slug": "boomi"
+    },
+    {
+      "name": "Postman",
+      "ats": "greenhouse",
+      "slug": "postman"
+    },
+    {
+      "name": "JFrog",
+      "ats": "greenhouse",
+      "slug": "jfrog"
+    },
+    {
+      "name": "Sonatype",
+      "ats": "lever",
+      "slug": "sonatype"
+    },
+    {
+      "name": "Snyk",
+      "ats": "ashby",
+      "slug": "snyk"
+    },
+    {
+      "name": "Veracode",
+      "ats": "greenhouse",
+      "slug": "veracode"
+    },
+    {
+      "name": "Okta",
+      "ats": "greenhouse",
+      "slug": "okta"
+    },
+    {
+      "name": "Ping Identity",
+      "ats": "greenhouse",
+      "slug": "pingidentity"
+    },
+    {
+      "name": "1Password",
+      "ats": "ashby",
+      "slug": "1password"
+    },
+    {
+      "name": "LastPass",
+      "ats": "greenhouse",
+      "slug": "lastpass"
+    },
+    {
+      "name": "Dashlane",
+      "ats": "greenhouse",
+      "slug": "dashlane"
+    },
+    {
+      "name": "Bitwarden",
+      "ats": "greenhouse",
+      "slug": "bitwarden"
+    },
+    {
+      "name": "Drata",
+      "ats": "ashby",
+      "slug": "drata"
+    },
+    {
+      "name": "Secureframe",
+      "ats": "lever",
+      "slug": "secureframe"
+    },
+    {
+      "name": "Wiz",
+      "ats": "ashby",
+      "slug": "wiz"
+    },
+    {
+      "name": "Orca Security",
+      "ats": "greenhouse",
+      "slug": "orcasecurity"
+    },
+    {
+      "name": "Netskope",
+      "ats": "greenhouse",
+      "slug": "netskope"
+    },
+    {
+      "name": "Zscaler",
+      "ats": "greenhouse",
+      "slug": "zscaler"
+    },
+    {
+      "name": "Rubrik",
+      "ats": "greenhouse",
+      "slug": "rubrik"
+    },
+    {
+      "name": "Pure Storage",
+      "ats": "greenhouse",
+      "slug": "purestorage"
+    },
+    {
+      "name": "Fivetran",
+      "ats": "greenhouse",
+      "slug": "fivetran"
+    },
+    {
+      "name": "Airbyte",
+      "ats": "ashby",
+      "slug": "airbyte"
+    },
+    {
+      "name": "Hightouch",
+      "ats": "greenhouse",
+      "slug": "hightouch"
+    },
+    {
+      "name": "Sisense",
+      "ats": "greenhouse",
+      "slug": "sisense"
+    },
+    {
+      "name": "Shield AI",
+      "ats": "ashby",
+      "slug": "shield-ai"
+    },
+    {
+      "name": "Lucid Motors",
+      "ats": "greenhouse",
+      "slug": "lucidmotors"
+    },
+    {
+      "name": "Faraday Future",
+      "ats": "greenhouse",
+      "slug": "faradayfuture"
+    },
+    {
+      "name": "Aurora Innovation",
+      "ats": "greenhouse",
+      "slug": "aurorainnovation"
+    },
+    {
+      "name": "Chargepoint",
+      "ats": "greenhouse",
+      "slug": "chargepoint"
+    },
+    {
+      "name": "Beam Global",
+      "ats": "greenhouse",
+      "slug": "beam"
+    },
+    {
+      "name": "Sunnova",
+      "ats": "greenhouse",
+      "slug": "sunnova"
+    },
+    {
+      "name": "Bloom Energy",
+      "ats": "greenhouse",
+      "slug": "bloom"
+    },
+    {
+      "name": "Redwood Materials",
+      "ats": "greenhouse",
+      "slug": "redwoodmaterials"
+    },
+    {
+      "name": "Impossible Foods",
+      "ats": "ashby",
+      "slug": "impossible-foods"
+    },
+    {
+      "name": "Beyond Meat",
+      "ats": "greenhouse",
+      "slug": "beyond"
+    },
+    {
+      "name": "Ginkgo Bioworks",
+      "ats": "greenhouse",
+      "slug": "ginkgobioworks"
+    },
+    {
+      "name": "Recursion Pharmaceuticals",
+      "ats": "greenhouse",
+      "slug": "recursionpharmaceuticals"
+    },
+    {
+      "name": "Flatiron Health",
+      "ats": "greenhouse",
+      "slug": "flatironhealth"
+    },
+    {
+      "name": "Cedar",
+      "ats": "ashby",
+      "slug": "cedar"
+    },
+    {
+      "name": "Oscar Health",
+      "ats": "greenhouse",
+      "slug": "oscar"
+    },
+    {
+      "name": "Clover Health",
+      "ats": "greenhouse",
+      "slug": "cloverhealth"
+    },
+    {
+      "name": "Ro",
+      "ats": "lever",
+      "slug": "ro"
+    },
+    {
+      "name": "Calm",
+      "ats": "greenhouse",
+      "slug": "calm"
+    },
+    {
+      "name": "Peloton",
+      "ats": "greenhouse",
+      "slug": "peloton"
+    },
+    {
+      "name": "Whoop",
+      "ats": "lever",
+      "slug": "whoop"
+    },
+    {
+      "name": "Oura",
+      "ats": "greenhouse",
+      "slug": "oura"
+    },
+    {
+      "name": "Strava",
+      "ats": "ashby",
+      "slug": "strava"
+    },
+    {
+      "name": "MyFitnessPal",
+      "ats": "greenhouse",
+      "slug": "myfitnesspal"
+    },
+    {
+      "name": "ClassPass",
+      "ats": "greenhouse",
+      "slug": "classpass"
+    },
+    {
+      "name": "Carbon Health",
+      "ats": "lever",
+      "slug": "carbonhealth"
+    },
+    {
+      "name": "Forward",
+      "ats": "greenhouse",
+      "slug": "forward"
+    },
+    {
+      "name": "One Medical",
+      "ats": "greenhouse",
+      "slug": "onemedical"
+    },
+    {
+      "name": "Grand Rounds",
+      "ats": "lever",
+      "slug": "grand"
+    },
+    {
+      "name": "Included Health",
+      "ats": "lever",
+      "slug": "includedhealth"
     }
   ]
 }

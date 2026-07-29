@@ -101,7 +101,7 @@ FETCHERS = {
 }
 
 
-def matches_filters(job, keywords_include, keywords_exclude, locations_include):
+def matches_filters(job, keywords_include, keywords_exclude, locations_include, locations_exclude):
     title = job["title"].lower()
     location = (job["location"] or "").lower()
 
@@ -111,9 +111,11 @@ def matches_filters(job, keywords_include, keywords_exclude, locations_include):
     if keywords_include and not any(kw.lower() in title for kw in keywords_include):
         return False
 
-    if locations_include:
-        if not any(loc.lower() in location for loc in locations_include):
-            return False
+    if locations_exclude and any(loc.lower() in location for loc in locations_exclude):
+        return False
+
+    if locations_include and not any(loc.lower() in location for loc in locations_include):
+        return False
 
     return True
 
@@ -156,6 +158,7 @@ def main():
     keywords_include = config.get("keywords_include", [])
     keywords_exclude = config.get("keywords_exclude", [])
     locations_include = config.get("locations_include", [])
+    locations_exclude = config.get("locations_exclude", [])
     max_age_hours = config.get("max_age_hours")
 
     new_count = 0
@@ -183,7 +186,7 @@ def main():
             current_ids.add(job["id"])
             if job["id"] in seen_ids:
                 continue
-            if not matches_filters(job, keywords_include, keywords_exclude, locations_include):
+            if not matches_filters(job, keywords_include, keywords_exclude, locations_include, locations_exclude):
                 continue
             if not is_within_age_limit(job, max_age_hours):
                 continue

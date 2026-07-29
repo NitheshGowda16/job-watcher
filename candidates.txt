@@ -1,13 +1,274 @@
-Supabase
-Ramp
-Linear
-Replicate
-Notion
-DoorDash
-Plaid
+Anthropic
+OpenAI
+Stripe
+Vercel
+Airtable
+Gusto
+Figma
+Mercury
+Databricks
+Coinbase
+Airbnb
+Robinhood
+Brex
+Asana
+Dropbox
+Pinterest
+Affirm
+Instacart
+Discord
+Reddit
+GitLab
+Datadog
+Netflix
+Vanta
 Snowflake
 Confluent
 HashiCorp
-Box
-Eventbrite
+MongoDB
+Elastic
+Twilio
+Segment
+Amplitude
+Braze
+Zendesk
+Intercom
+Notion
+Linear
 Retool
+Ramp
+Deel
+Rippling
+Carta
+Squarespace
+Wix
+Shopify
+Etsy
+Twitch
+Reddit
+Spotify
+SoundCloud
+Duolingo
+Roblox
+Unity
+Discord
+Robinhood
+Chime
+SoFi
+Affirm
+Klarna
+Plaid
+Marqeta
+Toast
+DoorDash
+Instacart
+Postmates
+Grubhub
+Lyft
+Uber
+Turo
+Getaround
+Nuro
+Cruise
+Waymo
+Zoox
+Snowflake
+Databricks
+Cloudera
+Palantir
+Splunk
+Datadog
+New Relic
+PagerDuty
+Sentry
+LaunchDarkly
+CircleCI
+GitHub
+GitLab
+Atlassian
+Asana
+Monday
+ClickUp
+Notion
+Airtable
+Smartsheet
+Miro
+Figma
+Canva
+InVision
+Webflow
+Squarespace
+Wix
+HubSpot
+Salesforce
+Zendesk
+Freshworks
+Intercom
+Drift
+Front
+Help Scout
+Gorgias
+Klaviyo
+Mailchimp
+SendGrid
+Postmark
+Twilio
+Vonage
+RingCentral
+Zoom
+Dropbox
+Box
+Egnyte
+Backblaze
+Wasabi
+DigitalOcean
+Linode
+Vultr
+Fastly
+Cloudflare
+Akamai
+Fly.io
+Render
+Railway
+Netlify
+Vercel
+Supabase
+PlanetScale
+Neon
+CockroachLabs
+Redis
+MongoDB
+Elastic
+Algolia
+Pinecone
+Weaviate
+Scale AI
+Labelbox
+Hugging Face
+Cohere
+Mistral
+Stability AI
+Runway
+Perplexity
+Character AI
+Replika
+Jasper
+Copy.ai
+Writer
+Grammarly
+Notion
+Coda
+Airtable
+Retool
+Bubble
+Zapier
+Make
+n8n
+Workato
+Tray.io
+Boomi
+MuleSoft
+Postman
+Insomnia
+JFrog
+Sonatype
+Snyk
+Veracode
+CrowdStrike
+SentinelOne
+Okta
+Auth0
+Ping Identity
+OneLogin
+Duo Security
+1Password
+LastPass
+Dashlane
+Bitwarden
+Vanta
+Drata
+Secureframe
+Wiz
+Orca Security
+Lacework
+Netskope
+Zscaler
+Palo Alto Networks
+Fortinet
+Cisco
+Juniper Networks
+Arista Networks
+Nutanix
+VMware
+Rubrik
+Cohesity
+Pure Storage
+NetApp
+Snowplow
+Fivetran
+dbt Labs
+Airbyte
+Census
+Hightouch
+Looker
+Sisense
+ThoughtSpot
+Tableau
+Domo
+Qlik
+Alteryx
+DataRobot
+H2O.ai
+C3 AI
+Palantir
+Anduril
+Shield AI
+Rivian
+Lucid Motors
+Fisker
+Faraday Future
+Aurora Innovation
+Argo AI
+Nikola
+Chargepoint
+EVgo
+Beam Global
+Sunrun
+Sunnova
+SolarEdge
+Enphase
+Bloom Energy
+QuantumScape
+Redwood Materials
+Northvolt
+Solugen
+Impossible Foods
+Beyond Meat
+Oatly
+Ginkgo Bioworks
+Recursion Pharmaceuticals
+Tempus
+Flatiron Health
+Cedar
+Oscar Health
+Clover Health
+Devoted Health
+Ro
+Hims & Hers
+Calm
+Headspace
+Peloton
+Whoop
+Oura
+Strava
+MyFitnessPal
+Noom
+ClassPass
+Carbon Health
+Forward
+One Medical
+Grand Rounds
+Included Health
+Included
+Included Health
+Included Health
